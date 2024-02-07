@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="base" template="/WEB-INF/templates/default.jsp">
+        <put-attribute name="title" value="Car Rental System"/>
+        <put-attribute name="nav" value="/WEB-INF/tiles/includes/nav.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/tiles/includes/footer.jsp"/>
+    </definition>
+
+    <definition name="home" extends="base">
+        <put-attribute name="title" value="User Home Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/home.jsp"/>
+    </definition>
+
+    <definition name="profile" extends="base">
+        <put-attribute name="title" value="Update Profile"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/profile.jsp"/>
+    </definition>
+
+    <definition name="change_password" extends="base">
+        <put-attribute name="title" value="Change Password"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/change_password.jsp"/>
+    </definition>
+
+    <definition name="contact_us" extends="base">
+        <put-attribute name="title" value="About Us Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/contact_us.jsp"/>
+    </definition>
+
+    <definition name="admin.home" extends="base">
+        <put-attribute name="title" value="Admin Home Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/home.jsp"/>
+    </definition>
+
+    <definition name="admin.brand.all" extends="base">
+        <put-attribute name="title" value="All Brands"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/brand/all.jsp"/>
+    </definition>
+
+    <definition name="admin.brand.create" extends="base">
+        <put-attribute name="title" value="Create Brand"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/brand/create.jsp"/>
+    </definition>
+
+    <definition name="admin.brand.edit" extends="base">
+        <put-attribute name="title" value="Create Brand"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/brand/edit.jsp"/>
+    </definition>
+
+    <definition name="admin.car_model.create" extends="base">
+        <put-attribute name="title" value="Create Car Model"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/car_model/create.jsp"/>
+    </definition>
+
+    <definition name="admin.car_model.all" extends="base">
+        <put-attribute name="title" value="All Car Models"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/car_model/all.jsp"/>
+    </definition>
+
+    <definition name="admin.car_model.edit" extends="base">
+        <put-attribute name="title" value="Edit Car Models"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/car_model/edit.jsp"/>
+    </definition>
+
+    <definition name="admin.user.all" extends="base">
+        <put-attribute name="title" value="All Users"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/user/all.jsp"/>
+    </definition>
+
+    <definition name="admin.driver.all" extends="base">
+        <put-attribute name="title" value="All Driver"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/driver/all.jsp"/>
+    </definition>
+
+    <definition name="admin.driver.create" extends="base">
+        <put-attribute name="title" value="Create Driver"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/driver/create.jsp"/>
+    </definition>
+
+    <definition name="admin.driver.edit" extends="base">
+        <put-attribute name="title" value="Edit Driver"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/driver/edit.jsp"/>
+    </definition>
+
+    <definition name="login" extends="base">
+        <put-attribute name="title" value="Login Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/login.jsp"/>
+    </definition>
+
+    <definition name="detail" extends="base">
+        <put-attribute name="title" value="Detail Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/detail.jsp"/>
+    </definition>
+
+    <definition name="register" extends="base">
+        <put-attribute name="title" value="Register Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/register.jsp"/>
+    </definition>
+
+    <definition name="admin.rent_car.rent_list" extends="base">
+        <put-attribute name="title" value="Active Rent Car Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/rent_car/rent_list.jsp"/>
+    </definition>
+
+    <definition name="admin.received_car.received_list" extends="base">
+        <put-attribute name="title" value="Received Car Page"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/received_car/received_list.jsp"/>
+    </definition>
+
+    <definition name="admin.history.history_list" extends="base">
+        <put-attribute name="title" value="History Lists"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/admin/history/history_list.jsp"/>
+    </definition>
+
+    <definition name="brand_page" extends="base">
+        <put-attribute name="title" value="Car Lists By Brand"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/brand_page.jsp"/>
+    </definition>
+
+    <definition name="search_page" extends="base">
+        <put-attribute name="title" value="Car Lists By User Search"/>
+        <put-attribute name="content" value="/WEB-INF/tiles/public/home.jsp"/>
+    </definition>
+
+</tiles-definitions>
